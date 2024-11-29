@@ -8,7 +8,7 @@
 std::string result;
 
 std::string LoadResourceString(int resourceId, LPCSTR resourceType) {
-    HMODULE handle = GetModuleHandle("wuwa_echo.dll");
+    HMODULE handle = GetModuleHandle("HTC.dll");
     HRSRC resource = FindResource(handle, MAKEINTRESOURCE(resourceId), resourceType);
 
     if (!resource) {

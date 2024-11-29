@@ -45,7 +45,7 @@ static const ImWchar ranges[] =
 };
 
 bool LoadFontFromResources(ImFontConfig font_cfg, const wchar_t* fontName, float fontSize) {
-    HMODULE hModuleF = GetModuleHandle("wuwa_echo.dll");
+    HMODULE hModuleF = GetModuleHandle("HTC.dll");
 
     // Find the resource handle within the DLL
     HRSRC hResource = FindResource(hModuleF, (LPCSTR) fontName, RT_RCDATA);

@@ -7,13 +7,13 @@ namespace Cheat {
 
 
 
-		f_ShowConsole = config::getValue("functions:Settings:Console", "showConsole", true);
-		f_ShowFps = config::getValue("functions:Settings", "showFps", true);
+		f_ShowConsole = config::getValue("functions:Settings:Console", "showConsole", false);
+		f_ShowFps = config::getValue("functions:Settings", "showFps", false);
 		f_Language = config::getValue("functions:Settings", "language", 1);
 		f_StartupArguments = config::getValue<std::string>("functions:Settings", "startupArguments", "");
 		f_Status = config::getValue("functions:Settings", "status", true);
 		f_StatusMove = config::getValue("functions:Settings", "statusMove", true);
-		f_ShowMenu = config::getValue("functions:Settings", "showMenu", true);
+		f_ShowMenu = config::getValue("functions:Settings", "showMenu", false);
 		f_EnabledFastExit = config::getValue("functions:Settings:FastExit", "enabled", false);
 		f_Hotkey = Hotkey("functions:Settings:Menu", VK_F11);
 		f_HotkeyConsole = Hotkey("functions:Settings:Console", VK_INSERT);
@@ -73,19 +73,23 @@ namespace Cheat {
 
 		if (f_Hotkey.IsPressed())
 		{
-			//LOG_DEBUG("try call show cursor");
-			UShowCursor(f_ShowMenu.getValue());
-			//LOG_DEBUG("end call show cursor");
-		}
 
+			//UShowCursor(f_ShowMenu.getValue());
+
+		}
+		if (f_HotkeyConsole.IsPressed())
+		{
+			if (f_ShowConsole)
+				ShowWindow(GetConsoleWindow(), SW_SHOW);
+			else
+				ShowWindow(GetConsoleWindow(), SW_HIDE);
+
+		}
 
 		if (f_HotkeyFastExit.IsPressed())
 			OnExitKeyPressed();
 
-		if (f_ShowConsole)
-			ShowWindow(GetConsoleWindow(), SW_SHOW);
-		else
-			ShowWindow(GetConsoleWindow(), SW_HIDE);
+
 
 		if (f_ShowFps)
 			DrawFPS();

@@ -37,32 +37,7 @@ namespace Cheat
 		return exePath.substr(0, exePath.find_last_of("\\/"));
 	}
 
-	// 检查 ThirdParty 文件夹中是否存在目标文件夹
-	Sdk_Type CheckSdkArea() {
-		try {
-			std::string exeDir = GetExeDirectory();
-			std::string thirdPartyPath = exeDir + "\\ThirdParty";
-
-			// 检查 ThirdParty 文件夹是否存在
-			if (!exists(thirdPartyPath) || !is_directory(thirdPartyPath)) {
-				return UnKnown;
-			}
-
-			// 检查是否存在目标文件夹
-			if (exists(thirdPartyPath + "\\KrPcSdk_Global") && is_directory(thirdPartyPath + "\\KrPcSdk_Global")) {
-				return Global;
-			}
-			if (exists(thirdPartyPath + "\\KrPcSdk_Mainland") && is_directory(thirdPartyPath + "\\KrPcSdk_Mainland")) {
-				return China;
-			}
-
-			return UnKnown;
-		}
-		catch (const std::exception& e) {
-			// 出现异常时返回 FolderNotFound
-			return UnKnown;
-		}
-	}
+	
 
 
 }

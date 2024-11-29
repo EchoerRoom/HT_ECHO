@@ -100,6 +100,9 @@
     <Filter Include="SDK\cbt1">
       <UniqueIdentifier>{7a20bf8d-0b37-483d-8460-661f146820d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Vendors\imgui_notify.h">
+      <UniqueIdentifier>{6a0e1220-75bd-4002-bd6c-560c41e760a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -291,9 +294,24 @@
     <ClInclude Include="SDK\cbt1\SDK\HTGame_classes.hpp">
       <Filter>SDK\cbt1</Filter>
     </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui_impl_dx12.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\d3d12hook.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\ImGuiNotify\fa_solid_900.h">
+      <Filter>源文件\Vendors\imgui_notify.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\ImGuiNotify\font_awesome_5.h">
+      <Filter>源文件\Vendors\imgui_notify.h</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\ImGuiNotify\tahoma.h">
+      <Filter>源文件\Vendors\imgui_notify.h</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Vendors\kiero\minhook\src\buffer.c">
@@ -433,6 +451,12 @@
     </ClCompile>
     <ClCompile Include="SDK\cbt1\SDK\CoreUObject_functions.cpp">
       <Filter>SDK\cbt1</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_impl_dx12.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\d3d12hook.cpp">
+      <Filter>源文件\Menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

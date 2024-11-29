@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{cae7c68b-8b8e-4a95-be45-e2290bed00fb}</ProjectGuid>
     <RootNamespace>wuwaecho</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <ProjectName>HTC</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -112,7 +112,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;WUWAECHO_EXPORTS;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;HTECHO_EXPORTS;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -124,7 +124,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <EnableUAC>true</EnableUAC>
-      <AdditionalDependencies>d3d11.lib;dxgi.lib;detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)Vendors\detours;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -172,6 +172,7 @@
     <ClInclude Include="includes.h" />
     <ClInclude Include="Menu\Config\ConfigField.h" />
     <ClInclude Include="Menu\Config\ConfigManager.h" />
+    <ClInclude Include="Menu\d3d12hook.h" />
     <ClInclude Include="Menu\GuiDefinitions.h" />
     <ClInclude Include="Menu\Hotkeys\Hotkey.h" />
     <ClInclude Include="Menu\Hotkeys\KeyBind.h" />
@@ -190,9 +191,13 @@
     <ClInclude Include="SDK\Unreal.h" />
     <ClInclude Include="Vendors\detours\detours.h" />
     <ClInclude Include="Vendors\detours\detver.h" />
+    <ClInclude Include="Vendors\ImGuiNotify\fa_solid_900.h" />
+    <ClInclude Include="Vendors\ImGuiNotify\font_awesome_5.h" />
+    <ClInclude Include="Vendors\ImGuiNotify\tahoma.h" />
     <ClInclude Include="Vendors\imgui\imconfig.h" />
     <ClInclude Include="Vendors\imgui\imgui.h" />
     <ClInclude Include="Vendors\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Vendors\imgui\imgui_impl_dx12.h" />
     <ClInclude Include="Vendors\imgui\imgui_impl_win32.h" />
     <ClInclude Include="Vendors\imgui\imgui_internal.h" />
     <ClInclude Include="Vendors\imgui\imgui_stdlib.h" />
@@ -230,8 +235,9 @@
     <ClCompile Include="Functions\Player\UltStamina.cpp" />
     <ClCompile Include="Functions\Player\WalkOnWater.cpp" />
     <ClCompile Include="Functions\Setting\Setting.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu\Config\ConfigManager.cpp" />
+    <ClCompile Include="Menu\d3d12hook.cpp" />
     <ClCompile Include="Menu\Hotkeys\Hotkey.cpp" />
     <ClCompile Include="Menu\Hotkeys\KeyBind.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
@@ -250,6 +256,7 @@
     <ClCompile Include="Vendors\imgui\imgui_demo.cpp" />
     <ClCompile Include="Vendors\imgui\imgui_draw.cpp" />
     <ClCompile Include="Vendors\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_impl_dx12.cpp" />
     <ClCompile Include="Vendors\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="Vendors\imgui\imgui_stdlib.cpp" />
     <ClCompile Include="Vendors\imgui\imgui_tables.cpp" />

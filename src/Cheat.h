@@ -13,7 +13,7 @@ namespace Cheat
 		China = 2      // 找到 KrPcSdk_Mainland 文件夹
 	};
 	std::string GetExeDirectory();
-	Sdk_Type CheckSdkArea();
+
 	bool Init();
 
 	void Uninit();

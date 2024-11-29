@@ -3,7 +3,7 @@
 #include "menu.h"
 #include "../includes.h"
 #include <string>
-#include "../Vendors/ImGuiNotify/imgui_notify.h"
+//#include "../Vendors/ImGuiNotify/imgui_notify.h"
 #include "Sections.h"
 #include "GuiDefinitions.h"
 
@@ -31,7 +31,7 @@ namespace Menu
 		}
 
         ImGui::PushFont(ImGui::GetIO().Fonts->Fonts[fontindex_menu]);
-        ImGui::Begin("WuwaEchoer");
+        ImGui::Begin("HTC_ECHO");
         ImGui::BeginGroup();
 
         static int SelectedSection = 0;
@@ -71,7 +71,7 @@ namespace Menu
         ImGui::BeginChild("ChildR", ImVec2(0, 0), ImGuiChildFlags_Border, ImGuiWindowFlags_None);
         DrawSection(ModuleOrder[SelectedSection]);
         ImGui::EndChild();
-        ImGui::RenderNotifications();
+        //ImGui::RenderNotifications();
         ImGui::EndGroup();
         ImGui::End();
         ImGui::PopFont();

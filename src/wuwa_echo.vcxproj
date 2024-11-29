@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cae7c68b-8b8e-4a95-be45-e2290bed00fb}</ProjectGuid>
+    <RootNamespace>wuwaecho</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>HTC</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>D:\Windows Kits\10\bin\10.0.22621.0\x64;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WUWAECHO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WUWAECHO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;WUWAECHO_EXPORTS;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableUAC>true</EnableUAC>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Vendors\detours;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;WUWAECHO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Cheat.h" />
+    <ClInclude Include="Functions\About\About.h" />
+    <ClInclude Include="Functions\Debug\Debug.h" />
+    <ClInclude Include="Functions\Function.h" />
+    <ClInclude Include="Functions\FunctionIncludes.h" />
+    <ClInclude Include="Functions\Misc\UConsole.h" />
+    <ClInclude Include="Functions\Player\AntiDither.h" />
+    <ClInclude Include="Functions\Player\BigJump.h" />
+    <ClInclude Include="Functions\Player\Critical.h" />
+    <ClInclude Include="Functions\Player\GodBuff.h" />
+    <ClInclude Include="Functions\Player\GodMode.h" />
+    <ClInclude Include="Functions\Player\HitMultiplier.h" />
+    <ClInclude Include="Functions\Player\PlayerSpeed.h" />
+    <ClInclude Include="Functions\Player\ResonantChain.h" />
+    <ClInclude Include="Functions\Player\UltSkills.h" />
+    <ClInclude Include="Functions\Player\UltStamina.h" />
+    <ClInclude Include="Functions\Player\WalkOnWater.h" />
+    <ClInclude Include="Functions\Setting\Setting.h" />
+    <ClInclude Include="Hooks\HookManager.h" />
+    <ClInclude Include="Hooks\Puerts_Init.hpp" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="Menu\Config\ConfigField.h" />
+    <ClInclude Include="Menu\Config\ConfigManager.h" />
+    <ClInclude Include="Menu\GuiDefinitions.h" />
+    <ClInclude Include="Menu\Hotkeys\Hotkey.h" />
+    <ClInclude Include="Menu\Hotkeys\KeyBind.h" />
+    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Menu\Sections.h" />
+    <ClInclude Include="Menu\Theme\Fonts\FontsLoader.h" />
+    <ClInclude Include="Menu\Theme\Themes.h" />
+    <ClInclude Include="Menu\Translater.h" />
+    <ClInclude Include="Menu\util.h" />
+    <ClInclude Include="Menu\Widget.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDK\cbt1\SDK\Basic.hpp" />
+    <ClInclude Include="SDK\cbt1\SDK\Engine_classes.hpp" />
+    <ClInclude Include="SDK\cbt1\SDK\HTGame_classes.hpp" />
+    <ClInclude Include="SDK\UMethod.h" />
+    <ClInclude Include="SDK\Unreal.h" />
+    <ClInclude Include="Vendors\detours\detours.h" />
+    <ClInclude Include="Vendors\detours\detver.h" />
+    <ClInclude Include="Vendors\imgui\imconfig.h" />
+    <ClInclude Include="Vendors\imgui\imgui.h" />
+    <ClInclude Include="Vendors\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Vendors\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Vendors\imgui\imgui_internal.h" />
+    <ClInclude Include="Vendors\imgui\imgui_stdlib.h" />
+    <ClInclude Include="Vendors\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Vendors\imgui\imstb_textedit.h" />
+    <ClInclude Include="Vendors\imgui\imstb_truetype.h" />
+    <ClInclude Include="Vendors\json\json.hpp" />
+    <ClInclude Include="Vendors\KEI_PE_HOOK.hpp" />
+    <ClInclude Include="Vendors\kiero\kiero.h" />
+    <ClInclude Include="Vendors\kiero\minhook\include\MinHook.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\buffer.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\hde32.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\hde64.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\table32.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\table64.h" />
+    <ClInclude Include="Vendors\kiero\minhook\src\trampoline.h" />
+    <ClInclude Include="Vendors\logger\Logger.h" />
+    <ClInclude Include="Vendors\magic_enum\magic_enum.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cheat.cpp" />
+    <ClCompile Include="Functions\About\About.cpp" />
+    <ClCompile Include="Functions\Debug\Debug.cpp" />
+    <ClCompile Include="Functions\Misc\UConsole.cpp" />
+    <ClCompile Include="Functions\Player\AntiDither.cpp" />
+    <ClCompile Include="Functions\Player\BigJump.cpp" />
+    <ClCompile Include="Functions\Player\Critical.cpp" />
+    <ClCompile Include="Functions\Player\GodBuff.cpp" />
+    <ClCompile Include="Functions\Player\GodMode.cpp" />
+    <ClCompile Include="Functions\Player\HitMultiplier.cpp" />
+    <ClCompile Include="Functions\Player\PlayerSpeed.cpp" />
+    <ClCompile Include="Functions\Player\ResonantChain.cpp" />
+    <ClCompile Include="Functions\Player\UltSkills.cpp" />
+    <ClCompile Include="Functions\Player\UltStamina.cpp" />
+    <ClCompile Include="Functions\Player\WalkOnWater.cpp" />
+    <ClCompile Include="Functions\Setting\Setting.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu\Config\ConfigManager.cpp" />
+    <ClCompile Include="Menu\Hotkeys\Hotkey.cpp" />
+    <ClCompile Include="Menu\Hotkeys\KeyBind.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Menu\Sections.cpp" />
+    <ClCompile Include="Menu\Theme\Fonts\FontsLoader.cpp" />
+    <ClCompile Include="Menu\Theme\Themes.cpp" />
+    <ClCompile Include="Menu\Translater.cpp" />
+    <ClCompile Include="Menu\util.cpp" />
+    <ClCompile Include="Menu\Widget.cpp" />
+    <ClCompile Include="SDK\cbt1\SDK\Basic.cpp" />
+    <ClCompile Include="SDK\cbt1\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\cbt1\SDK\Engine_functions.cpp" />
+    <ClCompile Include="SDK\cbt1\SDK\HTGame_functions.cpp" />
+    <ClCompile Include="SDK\UMethod.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Vendors\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Vendors\kiero\kiero.cpp" />
+    <ClCompile Include="Vendors\kiero\minhook\src\buffer.c" />
+    <ClCompile Include="Vendors\kiero\minhook\src\hde\hde32.c" />
+    <ClCompile Include="Vendors\kiero\minhook\src\hde\hde64.c" />
+    <ClCompile Include="Vendors\kiero\minhook\src\hook.c" />
+    <ClCompile Include="Vendors\kiero\minhook\src\trampoline.c" />
+    <ClCompile Include="Vendors\logger\Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vendors\kiero\minhook\dll_resources\MinHook.rc" />
+    <ResourceCompile Include="wuwa_echo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="resources\translations.json" />
+    <None Include="Vendors\kiero\minhook\dll_resources\MinHook.aps" />
+    <None Include="Vendors\kiero\minhook\dll_resources\MinHook.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\H7GBKHeavy.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Vendors\detours\detours.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{a7fdbae8-3ff8-47cc-be21-3f0580714ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors">
+      <UniqueIdentifier>{c85be9f8-ee72-4e79-b1b2-64dc5ba27298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\imgui">
+      <UniqueIdentifier>{75cafdc8-d792-4987-bf7e-ccd3d0a442e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero">
+      <UniqueIdentifier>{565987f9-5942-4f14-a887-17ff8e6408eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions">
+      <UniqueIdentifier>{e3808b75-7bd2-4b53-8e0e-cb4eee98092c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Menu">
+      <UniqueIdentifier>{ff89f3fd-89d5-4da1-8160-05d0391d9295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero\minhook">
+      <UniqueIdentifier>{ce738348-2985-4445-80d0-ae8390a80af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero\minhook\dll_resources">
+      <UniqueIdentifier>{ce6ab0de-3714-48ec-b848-96115471c285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero\include">
+      <UniqueIdentifier>{7096d4ca-e7c0-4fe7-a758-35d8ba03cbfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero\src">
+      <UniqueIdentifier>{652f722a-2079-47b2-9784-bbfbdb44226c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\kiero\src\hde">
+      <UniqueIdentifier>{f6e20911-0eb5-426f-a169-ecc1c3023127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Menu\Config">
+      <UniqueIdentifier>{e43964e6-af5a-48a8-a9f0-ddf813a66440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\logger">
+      <UniqueIdentifier>{870425d2-6367-4d2c-859a-ff56c9209fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\About">
+      <UniqueIdentifier>{9abe9641-ea4c-4d69-be72-baad8a16c79e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\Setting">
+      <UniqueIdentifier>{ac163422-463b-4572-b20a-b32f7e29f074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\json">
+      <UniqueIdentifier>{75372705-435b-458b-b85b-b0742aabd658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\resouces">
+      <UniqueIdentifier>{ae52b6cf-f85e-49be-8940-df9292adcdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Menu\Hotkey">
+      <UniqueIdentifier>{cf41fdeb-bc0a-494d-b9ac-4952dbb42851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Menu\Theme">
+      <UniqueIdentifier>{10d1e7a0-8eab-41a5-91b5-9429f6588620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Menu\Theme\Fonts">
+      <UniqueIdentifier>{be10d3e2-bd7c-4514-b338-d5c1de76a7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\Player">
+      <UniqueIdentifier>{f2ccdbba-b0e8-4ec3-a6c5-2846928b44f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\World">
+      <UniqueIdentifier>{0abdca30-ae65-4833-9b51-384e71856b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\Visual">
+      <UniqueIdentifier>{f2f3bcec-a2b2-4a1c-a973-944a2f9c0fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\ESP">
+      <UniqueIdentifier>{1117b675-58f2-4022-b5f4-a894bbe0a565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\Misc">
+      <UniqueIdentifier>{55f16879-302c-4f60-a90f-1e81922a1f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Functions\Debug">
+      <UniqueIdentifier>{1e82d522-65be-40a2-814a-915c1a78ffec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Hooks">
+      <UniqueIdentifier>{47edbcae-a2cb-4293-8797-c83fa6d35528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Vendors\detours">
+      <UniqueIdentifier>{e896b05f-0b15-4339-9250-cf0dd76e9fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\cbt1">
+      <UniqueIdentifier>{7a20bf8d-0b37-483d-8460-661f146820d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\include\MinHook.h">
+      <Filter>源文件\Vendors\kiero\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\buffer.h">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\kiero.h">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\trampoline.h">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\hde32.h">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\hde64.h">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\pstdint.h">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\table32.h">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\kiero\minhook\src\hde\table64.h">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imconfig.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui_impl_dx11.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui_impl_win32.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui_internal.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imgui_stdlib.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imstb_rectpack.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imstb_textedit.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\imgui\imstb_truetype.h">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Config\ConfigField.h">
+      <Filter>源文件\Menu\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Config\ConfigManager.h">
+      <Filter>源文件\Menu\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\util.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\logger\Logger.h">
+      <Filter>源文件\Vendors\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Sections.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Function.h">
+      <Filter>源文件\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\FunctionIncludes.h">
+      <Filter>源文件\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\GuiDefinitions.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\About\About.h">
+      <Filter>源文件\Functions\About</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Setting\Setting.h">
+      <Filter>源文件\Functions\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\json\json.hpp">
+      <Filter>源文件\Vendors\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\magic_enum\magic_enum.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Hotkeys\Hotkey.h">
+      <Filter>源文件\Menu\Hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Hotkeys\KeyBind.h">
+      <Filter>源文件\Menu\Hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Widget.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Theme\Fonts\FontsLoader.h">
+      <Filter>源文件\Menu\Theme\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Theme\Themes.h">
+      <Filter>源文件\Menu\Theme</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Translater.h">
+      <Filter>源文件\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Unreal.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\GodMode.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\AntiDither.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\BigJump.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\Critical.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\GodBuff.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\HitMultiplier.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\PlayerSpeed.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\ResonantChain.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\UltSkills.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\UltStamina.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Player\WalkOnWater.h">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\UMethod.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Misc\UConsole.h">
+      <Filter>源文件\Functions\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\Debug\Debug.h">
+      <Filter>源文件\Functions\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\KEI_PE_HOOK.hpp">
+      <Filter>源文件\Vendors</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\detours\detours.h">
+      <Filter>源文件\Vendors\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendors\detours\detver.h">
+      <Filter>源文件\Vendors\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\HookManager.h">
+      <Filter>源文件\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Puerts_Init.hpp">
+      <Filter>源文件\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\cbt1\SDK\Basic.hpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\cbt1\SDK\Engine_classes.hpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\cbt1\SDK\HTGame_classes.hpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\minhook\src\buffer.c">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\minhook\src\hook.c">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\kiero.cpp">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\minhook\src\trampoline.c">
+      <Filter>源文件\Vendors\kiero\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\minhook\src\hde\hde32.c">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\kiero\minhook\src\hde\hde64.c">
+      <Filter>源文件\Vendors\kiero\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_demo.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_draw.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_impl_dx11.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_impl_win32.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_stdlib.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_tables.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\imgui\imgui_widgets.cpp">
+      <Filter>源文件\Vendors\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Config\ConfigManager.cpp">
+      <Filter>源文件\Menu\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\util.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendors\logger\Logger.cpp">
+      <Filter>源文件\Vendors\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Sections.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\About\About.cpp">
+      <Filter>源文件\Functions\About</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Setting\Setting.cpp">
+      <Filter>源文件\Functions\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widget.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Translater.cpp">
+      <Filter>源文件\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Hotkeys\Hotkey.cpp">
+      <Filter>源文件\Menu\Hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Hotkeys\KeyBind.cpp">
+      <Filter>源文件\Menu\Hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Theme\Fonts\FontsLoader.cpp">
+      <Filter>源文件\Menu\Theme\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\GodMode.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\AntiDither.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\BigJump.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\Critical.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\GodBuff.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\HitMultiplier.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\PlayerSpeed.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\ResonantChain.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\UltSkills.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\UltStamina.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Player\WalkOnWater.cpp">
+      <Filter>源文件\Functions\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\UMethod.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Misc\UConsole.cpp">
+      <Filter>源文件\Functions\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions\Debug\Debug.cpp">
+      <Filter>源文件\Functions\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Theme\Themes.cpp">
+      <Filter>源文件\Menu\Theme</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\cbt1\SDK\Basic.cpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\cbt1\SDK\Engine_functions.cpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\cbt1\SDK\HTGame_functions.cpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\cbt1\SDK\CoreUObject_functions.cpp">
+      <Filter>SDK\cbt1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wuwa_echo.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Vendors\kiero\minhook\dll_resources\MinHook.rc">
+      <Filter>源文件\Vendors\kiero\minhook\dll_resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vendors\kiero\minhook\dll_resources\MinHook.aps">
+      <Filter>源文件\Vendors\kiero\minhook\dll_resources</Filter>
+    </None>
+    <None Include="Vendors\kiero\minhook\dll_resources\MinHook.def">
+      <Filter>源文件\Vendors\kiero\minhook\dll_resources</Filter>
+    </None>
+    <None Include="resources\translations.json">
+      <Filter>资源文件\resouces</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\H7GBKHeavy.TTF">
+      <Filter>资源文件\resouces</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Vendors\detours\detours.lib">
+      <Filter>源文件\Vendors\detours</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
